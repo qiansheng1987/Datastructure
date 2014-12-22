@@ -3,7 +3,7 @@ package stack;
 /**
  * 
  * @ClassName StackX
- * @Description 使用数据实现栈结构
+ * @Description 使用数组实现栈结构
  * @author qsdepth@foxmail.com
  * @date 2014-12-18
  */
