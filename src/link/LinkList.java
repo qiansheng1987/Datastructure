@@ -19,6 +19,14 @@ public class LinkList {
 		return (first == null);
 	}
 	
+	public Link getFirst() {
+		return first;
+	}
+	
+	public void setFirst(Link f) {
+		first = f;
+	}
+	
 	public void insertFirst(int id, double dd) {
 		Link newLink = new Link(id, dd); //make new link
 		newLink.next = first; //newLink -->old first
