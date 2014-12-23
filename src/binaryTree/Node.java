@@ -7,6 +7,6 @@ public class Node {
 	Node rightChild;
 	
 	public void display() {
-		
+		System.out.println("iData: " + iData);
 	}
 }
