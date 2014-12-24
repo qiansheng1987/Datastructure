@@ -6,7 +6,16 @@ public class Node {
 	Node leftChild;
 	Node rightChild;
 	
+	public Node(int iData, double fData) {
+		this.iData = iData;
+		this.fData = fData;
+	}
+	
 	public void display() {
-		System.out.println("iData: " + iData);//
+		System.out.print("{");
+		System.out.print(iData);
+		System.out.print(",");
+		System.out.print(fData);
+		System.out.print("}");
 	}
 }
