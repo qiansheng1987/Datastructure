@@ -7,7 +7,7 @@ public class DataItem {
 	}
 	
 	public void displayItem() {
-		System.out.println("/" + dData);
+		System.out.print("/" + dData);
 	}
 }
 

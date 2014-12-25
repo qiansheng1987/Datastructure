@@ -3,7 +3,7 @@ package Tree234;
 public class Node {
 	
 	private static final int ORDER = 4;
-	public int numItems;
+	public int numItems; //节点包含的数据项（最多为3个）
 	public Node parent;
 	public Node childArray[] = new Node[ORDER];
 	public DataItem itemArray[] = new DataItem[ORDER-1]; //数据项比子节点树少1
@@ -76,7 +76,7 @@ public class Node {
 			}
 		}
 		
-		itemArray[0] = newItem;
+		itemArray[numItems-1] = newItem;
 		return 0;
 	}
 	
@@ -87,6 +87,11 @@ public class Node {
 		Node node = new Node();
 		node.insertItem(item1);
 		node.insertItem(item);
+		//node.displayNode();
+		
+		node.removeItem();
+		node.displayNode();
+		node.removeItem();
 		node.displayNode();
 	}
 	
@@ -101,7 +106,7 @@ public class Node {
 	public void displayNode() { //format "/24/56/78"
 		for (int i = 0; i < numItems; i++) {
 			itemArray[i].displayItem();
-			System.out.println("/");
+			System.out.println("");
 		}
 	}
 	

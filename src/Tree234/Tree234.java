@@ -89,7 +89,7 @@ public class Tree234 {
 		for (int i = 0; i < numItems+1; i++) {
 			Node nextNode = thisNode.getChild(i);
 			if (nextNode != null) {
-				recDisplayTree(nextNode, level+1, i);
+				recDisplayTree(nextNode, level+1, i+1);
 			} else {
 				return ;
 			}
