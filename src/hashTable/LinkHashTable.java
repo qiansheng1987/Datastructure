@@ -18,7 +18,7 @@ package hashTable;
  * 		¡¥µÿ÷∑∑®
  * 	</p>
  * @author qsdepth@foxmail.com
- * @date 2014-12-25
+ * @date   2014-12-25
  */
 
 public class LinkHashTable {
